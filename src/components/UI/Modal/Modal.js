@@ -6,7 +6,7 @@ import Backdrop from '../BackDrop/BackDrop';
 class Modal extends Component {
     //The order summary keeps on rendering for each order hence the modal should include the above method in order to prevent re-rendering of order summary class
     shouldComponentUpdate(nextProps, nextState) {
-        return nextProps.show !== this.props.show; 
+        return nextProps.show !== this.props.show || nextProps.children !== this.props.children; 
     }
 
     componentWillUpdate() {
