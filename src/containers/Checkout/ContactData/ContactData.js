@@ -137,9 +137,9 @@ class ContactData extends Component {
     checkValidity = (value, rules) => {
         let isValid = true;
         //Alternate method to dropdown list error (couldn't select other options)
-        if (!rules) {
-            return true;
-        }
+        // if (!rules) {
+        //     return true;
+        // }
         if (rules.required) {
             isValid = value.trim() !== '' && isValid;
         }
